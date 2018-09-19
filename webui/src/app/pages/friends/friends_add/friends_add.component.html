@@ -1,0 +1,38 @@
+
+<div class="col-md-6">
+    <h2 class="text-center">Add friend</h2>
+    <form>
+        <div class="form-group">
+            <label for="name">Friend name:</label>
+            <input [(ngModel)]="friend.name" placeholder="Friend name" name="name" class="form-control" id="name">
+        </div>
+
+        <div class="form-group">
+            <label for="lastName">Friend last name:</label>
+            <input [(ngModel)]="friend.lastName" placeholder="Friend last name" name="lastName" class="form-control" id="lastName">
+        </div>
+
+        <div class="form-group">
+            <label for="age">Friend age:</label>
+            <input [(ngModel)]="friend.age" placeholder="Friend age" name="age" class="form-control" id="age">
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Friend phone:</label>
+            <input [(ngModel)]="friend.phone" placeholder="Friend phone" name="phone" class="form-control" id="phone">
+        </div>
+
+        <div class="form-group">
+            <label for="address">Friend address:</label>
+            <input [(ngModel)]="friend.address" placeholder="Friend address" name="address" class="form-control" id="address">
+        </div>
+
+        <div class="form-group">
+            <label for="photos">Friend photos:</label>
+            <input [(ngModel)]="friend.photos" placeholder="Friend photos" name="photos" class="form-control" id="photos">
+        </div>
+
+        <button class="btn btn-success" (click)="addServer()">Create</button>
+    </form>
+</div>
+<simple-notifications></simple-notifications>

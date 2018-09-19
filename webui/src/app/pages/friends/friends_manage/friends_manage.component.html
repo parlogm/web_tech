@@ -1,0 +1,30 @@
+<div class="pad-16">
+
+    <ngx-datatable
+            style='width:1000px;'
+            [rows]="rows"
+            [columns]="columns"
+            [headerHeight]="45"
+            [rowHeight]="'auto'"
+            [columnMode]="'standard'"
+            [scrollbarV]="false"
+            [sorts]="[{prop: 'name', dir: 'asc'}]"
+    >
+    </ngx-datatable>
+
+</div>
+
+<ng-template #actionBtns let-row="row"  ngx-datatable-cell-template>
+    <!--<div (click)="delete(row.id)" class="d-flex justify-content-center btn btn-sm btn-outline-secondary">
+        <i class="fa fa-trash"></i>
+    </div>-->
+    <div (click)="delete(row.id)" class="d-flex justify-content-center btn btn-sm btn-outline-secondary">
+        <clr-icon shape="trash" class="is-error"></clr-icon>
+    </div>
+    <div (click)="edit(row.id)" class="d-flex justify-content-center btn btn-sm btn-outline-secondary">
+        <clr-icon shape="edit"  class="is-info"></clr-icon>
+    </div>
+    <!--<button md-icon-button (click)="blockAgents(value)">
+        <clr-icon shape="trash" class="is-error"></clr-icon>
+    </button>-->
+</ng-template>

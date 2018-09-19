@@ -1,0 +1,24 @@
+<div class="s-friends-dash-pg">
+    <div class="chart-box">
+        <h4> Friends by age </h4>
+        <ngx-charts-advanced-pie-chart
+                style="position:relative"
+                [view]="view"
+                [scheme]="colorScheme"
+                [results]="friendsByAgeData"
+        >
+        </ngx-charts-advanced-pie-chart>
+    </div>
+
+    <div class="chart-box">
+        <h4> Friends by address </h4>
+        <ngx-charts-advanced-pie-chart
+                style="position:relative"
+                [view]="view"
+                [scheme]="colorScheme"
+                [results]="friendsByAddressData"
+        >
+        </ngx-charts-advanced-pie-chart>
+    </div>
+
+</div>
